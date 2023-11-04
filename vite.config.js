@@ -6,17 +6,21 @@ const resolveSrc = (k) => resolve(__dirname, "./src", k);
 export default {
   resolve: {
     alias: {
-      "@elements": resolveSrc("elements"),
-      "@states": resolveSrc("states"),
+      "@elements": resolveSrc("./elements"),
+      "@states": resolveSrc("./states"),
     },
   },
 
-  build: {
-    lib: {
-      entry: resolveSrc('./index.ts'),
-      name: 'peeker',
+  define: { "process.env.NODE_ENV": '"production"' },
 
-      fileName: 'peeker'
+  build: {
+    target: ["edge88", "firefox78", "chrome87", "safari14"],
+
+    lib: {
+      entry: resolveSrc("./index.ts"),
+      name: "peeker",
+
+      fileName: "peeker",
     },
-  }
+  },
 };
