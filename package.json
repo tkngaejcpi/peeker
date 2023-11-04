@@ -1,0 +1,22 @@
+{
+  "name": "peeker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@nanostores/lit": "^0.2.0",
+    "@types/node": "^20.8.10",
+    "lit": "^2.7.6",
+    "nanostores": "^0.9.4"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}

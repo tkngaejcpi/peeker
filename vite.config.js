@@ -1,0 +1,13 @@
+import { resolve } from "node:path";
+
+const resolveSrc = (k) => resolve(__dirname, "./src", k);
+
+/** @type {import('vite').UserConfig} */
+export default {
+  resolve: {
+    alias: {
+      "@elements": resolveSrc("elements"),
+      "@states": resolveSrc("states"),
+    },
+  },
+};
