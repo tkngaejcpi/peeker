@@ -21,7 +21,7 @@ export class Peeker extends LitElement {
       <div class=${classMap({ hide: !state.show })}>
         <div class="container">
           <div class="bar">
-            <h2>${state.peekAt?.title}</h2>
+            <h2><a href=${state.peekAt?.linkTo}>${state.peekAt?.title}</a></h2>
             <button @click=${() => hide()}>X</button>
           </div>
 
