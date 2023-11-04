@@ -1,6 +1,6 @@
 ## What is Peeker?
 
-**Peeker** is a web component that provide a preview window of your content.
+**Peeker** is a web component that provides a preview window of your content.
 
 Using **Peeker** as a web component, you:
 
@@ -12,7 +12,7 @@ Using **Peeker** as a web component, you:
 
 * can keep your data with a open format when you want to stop using **Peeker**
 
-**Peeker** is very useful on some static content site, like your blog.
+**Peeker** is very useful in some static content site, like your blog.
 
 ## How to use Peeker
 
@@ -24,7 +24,7 @@ First, add this importing code to the head section of html:
   src="https://cdn.jsdelivr.net/gh/tkngaejcpi/peeker@0f70505c3f4ee5c967152bbd7fbad04edc54aa39/peeker.min.js"
 ></script>
 ```
-Then, prepare a preview data json, with the format:
+Then, prepare a preview data json, with the schema:
 
 > Note that "rawData" will be **unsafely** rendered to HTML, you should check them before using. *It is suggested to use a generator rather than writing the json file manually.*
 
@@ -54,7 +54,7 @@ to the anywhere you want in the body, it will be rendered to `<a>` tag.
 
 Just a `vvv-peekable`, before click the link:
 
-![](./screenshots/0.jpg)
+![](./screenshots/0.png)
 
 After click the link, the preview window pop up:
 
@@ -62,6 +62,10 @@ After click the link, the preview window pop up:
 
 ## TODO
 
+* make the preview window next to the link
+
 * improve looking
 
 * support external styling
+
+* add animation
