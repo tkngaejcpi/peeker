@@ -10,4 +10,13 @@ export default {
       "@states": resolveSrc("states"),
     },
   },
+
+  build: {
+    lib: {
+      entry: resolveSrc('./index.ts'),
+      name: 'peeker',
+
+      fileName: 'peeker'
+    },
+  }
 };
