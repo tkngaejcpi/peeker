@@ -27,7 +27,7 @@ First, add this importing code to the head section of html:
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/gh/tkngaejcpi/peeker@0f70505c3f4ee5c967152bbd7fbad04edc54aa39/peeker.min.js"
+  src="https://cdn.jsdelivr.net/gh/tkngaejcpi/peeker@ed4998a93778bf3de62207c2286a646cbed41cd6/peeker.min.js"
 ></script>
 ```
 
