@@ -1,9 +1,10 @@
-import { LitElement, css, html, unsafeCSS } from "lit";
-import { customElement, property } from "lit/decorators.js";
+import { LitElement, css, html, unsafeCSS } from 'lit';
 
-import style from "@elements/Peekable.css?inline";
+import { customElement, property } from 'lit/decorators.js';
 
-import { WindowPosition, peek } from "@states/peeker";
+import { WindowPosition, peek } from '@states/peeker';
+
+import style from '@elements/Peekable.css?inline';
 
 /* --- helpers --- */
 const mkPosition = (e: MouseEvent): WindowPosition => ({
@@ -12,9 +13,9 @@ const mkPosition = (e: MouseEvent): WindowPosition => ({
 });
 
 /* --- component --- */
-@customElement("vvv-peekable")
+@customElement('vvv-peekable')
 export class Peekable extends LitElement {
-  @property({ attribute: "data-url" })
+  @property({ attribute: 'data-url' })
   public dataURL: string | undefined = undefined;
 
   render() {
@@ -32,6 +33,6 @@ export class Peekable extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "vvv-peekable": Peekable;
+    'vvv-peekable': Peekable;
   }
 }

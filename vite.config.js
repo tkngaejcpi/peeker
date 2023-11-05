@@ -1,26 +1,26 @@
-import { resolve } from "node:path";
+import { resolve } from 'node:path';
 
-const resolveSrc = (k) => resolve(__dirname, "./src", k);
+const resolveSrc = (k) => resolve(__dirname, './src', k);
 
 /** @type {import('vite').UserConfig} */
 export default {
   resolve: {
     alias: {
-      "@elements": resolveSrc("./elements"),
-      "@states": resolveSrc("./states"),
+      '@elements': resolveSrc('./elements'),
+      '@states': resolveSrc('./states'),
     },
   },
 
-  define: { "process.env.NODE_ENV": '"production"' },
+  define: { 'process.env.NODE_ENV': '"production"' },
 
   build: {
-    target: ["edge88", "firefox78", "chrome87", "safari14"],
+    target: ['edge88', 'firefox78', 'chrome87', 'safari14'],
 
     lib: {
-      entry: resolveSrc("./index.ts"),
-      name: "peeker",
+      entry: resolveSrc('./index.ts'),
+      name: 'peeker',
 
-      fileName: "peeker",
+      fileName: 'peeker',
     },
   },
 };

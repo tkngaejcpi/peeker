@@ -1,4 +1,4 @@
-import { map, action } from "nanostores";
+import { map, action } from 'nanostores';
 
 /* --- state --- */
 export interface WindowPosition {
@@ -30,24 +30,24 @@ const initState: PeekerState = {
 export const $state = map(initState);
 
 /* --- actions --- */
-export const hide = action($state, "hide", ($s) => {
-  $s.setKey("show", false);
+export const hide = action($state, 'hide', ($s) => {
+  $s.setKey('show', false);
 });
 
-export const show = action($state, "show", ($s) => {
-  $s.setKey("show", true);
+export const show = action($state, 'show', ($s) => {
+  $s.setKey('show', true);
 });
 
 export const peek = action(
   $state,
-  "peek",
+  'peek',
   ($s, url: string, position: WindowPosition) => {
     fetch(url)
       .then((res) => res.json() as Promise<PeekData>)
       .then((data) => {
-        $s.setKey("peekAt", data);
-        $s.setKey("position", position);
+        $s.setKey('peekAt', data);
+        $s.setKey('position', position);
         show();
       });
-  }
+  },
 );

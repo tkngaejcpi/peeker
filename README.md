@@ -4,13 +4,13 @@
 
 Using **Peeker** as a web component, you:
 
-* just have to prepare the previewing data
+- just have to prepare the previewing data
 
-* don't pollute the thing not related to preview
+- don't pollute the thing not related to preview
 
-* don't have to think about the framework stuff
+- don't have to think about the framework stuff
 
-* can keep your data with a open format when you want to stop using **Peeker**
+- can keep your data with a open format when you want to stop using **Peeker**
 
 **Peeker** is very useful in some static content site, like your blog.
 
@@ -24,9 +24,10 @@ First, add this importing code to the head section of html:
   src="https://cdn.jsdelivr.net/gh/tkngaejcpi/peeker@0f70505c3f4ee5c967152bbd7fbad04edc54aa39/peeker.min.js"
 ></script>
 ```
+
 Then, prepare a preview data json, with the schema:
 
-> Note that "rawData" will be **unsafely** rendered to HTML, you should check them before using. *It is suggested to use a generator rather than writing the json file manually.*
+> Note that "rawData" will be **unsafely** rendered to HTML, you should check them before using. _It is suggested to use a generator rather than writing the json file manually._
 
 ```json
 {
@@ -62,12 +63,12 @@ After click the link, the preview window pop up:
 
 ## TODO
 
-* improve looking
+- improve looking
 
-* support external styling
+- support external styling
 
-* add cache
+- add cache
 
-* ~~make the preview window next to the link~~
+- ~~make the preview window next to the link~~
 
-* ~~add animation~~
+- ~~add animation~~

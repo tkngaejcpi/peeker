@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "format": "prettier --config prettier.config.js ./ -w",
     "build": "tsc && vite build && rm -rf ./dist/test",
     "clean": "rm -rf ./dist",
     "preview": "vite preview"
@@ -16,6 +17,7 @@
     "nanostores": "^0.9.4"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.1",
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
