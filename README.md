@@ -33,7 +33,7 @@ First, add this importing code to the head section of html:
 ```html
 <script
   type="module"
-  src="https://cdn.jsdelivr.net/npm/@rileycki3333/peeker@1.1.0/dist/peeker.min.js"
+  src="https://cdn.jsdelivr.net/npm/@rileycki3333/peeker@1.1.1/dist/peeker.min.js"
 ></script>
 ```
 
