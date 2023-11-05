@@ -1,3 +1,9 @@
+## TOC
+* [What is Peeker?](#what-is-peeker)
+* [How to Use Peeker?](#how-to-use-peeker)
+* [Screenshots](#screenshots)
+* [TODO](#todo)
+
 ## What is Peeker?
 
 **Peeker** is a **web component** that provides a preview window of your content.
@@ -20,7 +26,7 @@ Check more in [👉 how to use peeker](#how-to-use-peeker).
 
 **Peeker** is very useful in some static content site, for example your blog, because it just makes the preview part instead of entire site dynamic (*web component is a "island" automatically*), which is good for SEO.
 
-## How to use Peeker
+## How to use Peeker?
 
 First, add this importing code to the head section of html:
 
@@ -69,8 +75,6 @@ After click the link, the preview window pop up:
 
 ## TODO
 
-- improve looking
-
 - support external styling (theme?)
 
 - add cache
@@ -78,3 +82,5 @@ After click the link, the preview window pop up:
 - ~~make the preview window next to the link~~
 
 - ~~add animation~~
+
+- ~~improve looking~~
