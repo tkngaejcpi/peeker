@@ -1,18 +1,24 @@
 ## What is Peeker?
 
-**Peeker** is a web component that provides a preview window of your content.
+**Peeker** is a **web component** that provides a preview window of your content.
 
 Using **Peeker** as a web component, you:
 
-- just have to prepare the previewing data
+- can add a previewer to your site out of the box
 
 - don't pollute the thing not related to preview
 
 - don't have to think about the framework stuff
 
-- can keep your data with a open format when you want to stop using **Peeker**
+All you have to do is:
 
-**Peeker** is very useful in some static content site, like your blog.
+1. prepare previewing data
+
+2. import this script, and add the web component in your site
+
+Check more in [👉 how to use peeker](#how-to-use-peeker).
+
+**Peeker** is very useful in some static content site, for example your blog, because it just makes the preview part instead of entire site dynamic (*web component is a "island" automatically*), which is good for SEO.
 
 ## How to use Peeker
 
@@ -27,7 +33,7 @@ First, add this importing code to the head section of html:
 
 Then, prepare a preview data json, with the schema:
 
-> Note that "rawData" will be **unsafely** rendered to HTML, you should check them before using. _It is suggested to use a generator rather than writing the json file manually._
+> **Caution**: "rawData" will be **unsafely** rendered to HTML, you should check them before using. _It is suggested to use a generator rather than writing the json file manually._
 
 ```json
 {
@@ -53,7 +59,7 @@ to the anywhere you want in the body, it will be rendered to `<a>` tag.
 
 ## Screenshots
 
-Just a `vvv-peekable`, before click the link:
+Before click the link:
 
 ![](./screenshots/0.png)
 
@@ -65,7 +71,7 @@ After click the link, the preview window pop up:
 
 - improve looking
 
-- support external styling
+- support external styling (theme?)
 
 - add cache
 
