@@ -3,8 +3,15 @@ import { customElement, property } from "lit/decorators.js";
 
 import style from "@elements/Peekable.css?inline";
 
-import { peek } from "@states/peeker";
+import { WindowPosition, peek } from "@states/peeker";
 
+/* --- helpers --- */
+const mkPosition = (e: MouseEvent): WindowPosition => ({
+  x: e.clientX,
+  y: e.clientY,
+});
+
+/* --- component --- */
 @customElement("vvv-peekable")
 export class Peekable extends LitElement {
   @property({ attribute: "data-url" })
@@ -12,7 +19,9 @@ export class Peekable extends LitElement {
 
   render() {
     return html`
-      <a @click=${() => peek(this.dataURL!)}><slot><slot/></a>
+      <a @click=${(e: MouseEvent) => {
+        peek(this.dataURL!, mkPosition(e));
+      }}><slot><slot/></a>
       `;
   }
 

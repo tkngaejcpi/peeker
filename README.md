@@ -62,7 +62,7 @@ After click the link, the preview window pop up:
 
 ## TODO
 
-* make the preview window next to the link
+* ~~make the preview window next to the link~~
 
 * improve looking
 
