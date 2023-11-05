@@ -1,0 +1,21 @@
+# package
+pnpm-lock.yaml
+node_modules/
+
+# typescript stuff
+tsconfig.json
+src/
+
+# dev modules stuff
+prettier.config.js
+vite.config.js
+index.html
+.vite/
+public/
+
+# chore
+.gitignore
+LICENSE
+README.md
+screenshots/
+

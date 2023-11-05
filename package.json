@@ -1,12 +1,31 @@
 {
-  "name": "peeker",
-  "private": true,
+  "name": "@rileycki3333/peeker",
   "version": "1.1.0",
+  "author": {
+    "name": "Riley Chang",
+    "email": "rileycki3333@gmail.com"
+  },
+  "keywords": [
+    "component",
+    "web-component",
+    "preview"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tkngaejcpi/peeker"
+  },
+  "bugs": {
+    "url": "https://github.com/tkngaejcpi/peeker/issues",
+    "email": "rileycki3333@gmail.com"
+  },
+  "main": "./dist/peeker.js",
+  "license": "GPL-3.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "format": "prettier --config prettier.config.js ./ -w",
     "build": "tsc && vite build && rm -rf ./dist/test",
+    "test": "echo SKIP TEST",
     "clean": "rm -rf ./dist",
     "preview": "vite preview"
   },
