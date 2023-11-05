@@ -1,5 +1,5 @@
 {
   "title": "a test",
-  "linkTo": "/test.json",
+  "linkTo": "/test/0.json",
   "rawData": "<article><p>this is just a test</p></article>"
 }

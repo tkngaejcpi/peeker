@@ -62,10 +62,12 @@ After click the link, the preview window pop up:
 
 ## TODO
 
-* ~~make the preview window next to the link~~
-
 * improve looking
 
 * support external styling
 
-* add animation
+* add cache
+
+* ~~make the preview window next to the link~~
+
+* ~~add animation~~

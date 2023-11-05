@@ -1,8 +1,26 @@
+.hidden {
+  padding: 0 !important;
+
+  height: 0 !important;
+  width: 0 !important;
+  scale: 0.2 !important;
+
+  border: 0 !important;
+  opacity: 0;
+
+  overflow: hidden;
+}
+
 .container {
   position: absolute;
+  z-index: 99;
 
   margin: 0.5rem;
   padding: 0.5rem;
+
+  height: auto;
+  width: auto;
+  scale: 1;
 
   border: solid 2px grey;
   border-radius: 8px;
@@ -12,6 +30,12 @@
   gap: 0.5rem;
 
   background-color: whitesmoke;
+
+  opacity: 0.9;
+
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }
 
 .bar {
