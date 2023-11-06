@@ -1,11 +1,5 @@
-import { Peekable } from '@elements/Peekable';
-import { Peeker } from '@elements/Peeker';
-
-/* place holder */
-export default {
-  Peekable,
-  Peeker,
-};
+import '@elements/Peekable';
+import '@elements/Peeker';
 
 /* show a log to remind */
 console.info(
