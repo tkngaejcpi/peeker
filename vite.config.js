@@ -19,8 +19,9 @@ export default {
     lib: {
       entry: resolveSrc('./index.ts'),
       name: 'peeker',
+      formats: ['es'],
 
-      fileName: 'peeker',
+      fileName: 'index',
     },
   },
 };
