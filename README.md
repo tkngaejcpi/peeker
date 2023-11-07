@@ -1,13 +1,16 @@
 ## TOC
 
 - [What is Peeker?](#what-is-peeker)
-- [How to Use Peeker?](#how-to-use-peeker)
+- [Quick Start](#quick-start)
+- [Custom Theme](#custom-theme)
 - [Screenshots](#screenshots)
 - [TODO](#todo)
 
 ## What is Peeker?
 
 **Peeker** is a **web component** that provides a preview window of your content.
+
+**Peeker** is very useful in some static content site, for example your blog, because it just makes the preview part instead of entire site dynamic (_web component is a "island" automatically_), which is good for SEO.
 
 Using **Peeker** as a web component, you:
 
@@ -25,17 +28,20 @@ All you have to do is:
 
 Check more in [👉 how to use peeker](#how-to-use-peeker).
 
-**Peeker** is very useful in some static content site, for example your blog, because it just makes the preview part instead of entire site dynamic (_web component is a "island" automatically_), which is good for SEO.
-
-## How to use Peeker?
+## Quick Start
 
 First, add this importing code to the head section of html:
 
 ```html
-<script
-  type="module"
-  src="https://cdn.jsdelivr.net/npm/@rileycki3333/peeker@1.1.1/dist/peeker.min.js"
-></script>
+<script type="module">
+  import {
+    defineAllComponents,
+    useDefaultTheme,
+  } from 'https://cdn.jsdelivr.net/npm/@rileycki3333/peeker@1.2.0/dist/index.min.js';
+
+  defineAllComponents();
+  useDefaultTheme(); // remove this when you want to use a custom theme
+</script>
 ```
 
 Then, prepare a preview data json, with the schema:
@@ -64,6 +70,22 @@ to the body of html, and put
 
 to the anywhere you want in the body, it will be rendered to `<a>` tag.
 
+## Custom Theme
+
+> If you want to use a custom theme, please don't call `useDefaultTheme` in the export.
+
+Just add such a css snippet to body within a `<style>`:
+
+```css
+vvv-peeker {
+  --peeker-background-color: #f6fbff;
+  --peeker-border-color: #dcebf7;
+  --peeker-close-button-background-color: #ddefff;
+  --peeker-close-button-border-color: #dcebf7;
+  --peeker-text-color: #2f2f2f;
+}
+```
+
 ## Screenshots
 
 Before click the link:
@@ -76,12 +98,12 @@ After click the link, the preview window pop up:
 
 ## TODO
 
-- support external styling (theme?)
-
-- add cache
-
 - ~~make the preview window next to the link~~
 
 - ~~add animation~~
 
 - ~~improve looking~~
+
+- ~~add cache (by HTTP cache)~~
+
+- ~~support external styling (theme?)~~
