@@ -1,6 +1,6 @@
 import { LitElement, css, html, unsafeCSS } from 'lit';
 
-import { customElement, property } from 'lit/decorators.js';
+import { property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 import { styleMap } from 'lit/directives/style-map.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
@@ -11,7 +11,8 @@ import { $state, hide } from '@states/peeker';
 
 import style from '@elements/Peeker.css?inline';
 
-@customElement('vvv-peeker')
+export const tag = 'vvv-peeker';
+
 export class Peeker extends LitElement {
   @property()
   private stateController = new StoreController(this, $state);
@@ -52,6 +53,6 @@ export class Peeker extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'vvv-peeker': Peeker;
+    [tag]: Peeker;
   }
 }

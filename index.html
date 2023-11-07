@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peeker Example</title>
-    <script type="module" src="/src/index.ts"></script>
+    <script type="module">
+      import { defineAllComponents, useDefaultTheme } from '/src/index.ts';
+
+      defineAllComponents();
+      useDefaultTheme();
+    </script>
   </head>
   <body>
     <vvv-peekable data-url="/test/0.json">Click me</vvv-peekable><br />

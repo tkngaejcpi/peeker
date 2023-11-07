@@ -1,8 +1,9 @@
 ## TOC
-* [What is Peeker?](#what-is-peeker)
-* [How to Use Peeker?](#how-to-use-peeker)
-* [Screenshots](#screenshots)
-* [TODO](#todo)
+
+- [What is Peeker?](#what-is-peeker)
+- [How to Use Peeker?](#how-to-use-peeker)
+- [Screenshots](#screenshots)
+- [TODO](#todo)
 
 ## What is Peeker?
 
@@ -24,7 +25,7 @@ All you have to do is:
 
 Check more in [👉 how to use peeker](#how-to-use-peeker).
 
-**Peeker** is very useful in some static content site, for example your blog, because it just makes the preview part instead of entire site dynamic (*web component is a "island" automatically*), which is good for SEO.
+**Peeker** is very useful in some static content site, for example your blog, because it just makes the preview part instead of entire site dynamic (_web component is a "island" automatically_), which is good for SEO.
 
 ## How to use Peeker?
 

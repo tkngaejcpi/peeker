@@ -26,9 +26,9 @@
   flex-direction: column;
   gap: 0.5rem;
 
-  background-color: #f6fbff;
+  background-color: var(--peeker-background-color);
 
-  border: solid 2px #dcebf7;
+  border: solid 2px var(--peeker-border-color);
   border-radius: 8px;
 
   border-radius: 8px;
@@ -53,18 +53,19 @@
   margin: 0;
 }
 
-.bar > h2 > a {
-  color: #3a3a3a;
+.bar > h2 > a,
+article {
+  color: var(--peeker-text-color);
 }
 
 .bar > button {
   margin-left: auto;
   padding: 0.25rem 0.5rem;
 
-  border: solid 1px #dcebf7;
+  border: solid 1px var(--peeker-close-button-border-color);
   border-radius: 8px;
 
-  background-color: #ddefff;
+  background-color: var(--peeker-close-button-background-color);
 
   font-weight: bold;
 

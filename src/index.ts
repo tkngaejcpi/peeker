@@ -1,11 +1,32 @@
-import '@elements/Peekable';
-import '@elements/Peeker';
+import { Peekable, tag as peekableTag } from '@elements/Peekable';
+import { Peeker, tag as peekerTag } from '@elements/Peeker';
+
+import style from './themes/default.css?inline';
+
+/* export components */
+export const components = {
+  Peekable,
+  Peeker,
+};
+
+/* export utils */
+export const defineAllComponents = () => {
+  customElements.define(peekableTag, Peekable);
+  customElements.define(peekerTag, Peeker);
+};
+
+export const useDefaultTheme = () => {
+  const themeStyle = document.createElement('style');
+  themeStyle.innerHTML = style;
+
+  document.getElementsByTagName('body')[0]!.appendChild(themeStyle);
+};
 
 /* show a log to remind */
 console.info(
-  "module 'peeker' is loaded, you can use custom elements 'vvv-peekable' and 'vvv-peeker' now!",
+  "module 'Peeker' is loaded, you can use custom elements 'vvv-peekable' and 'vvv-peeker' now!",
 );
 
 console.info(
-  'you can know more about peeker at https://github.com/tkngaejcpi/peeker.',
+  'you can know more about Peeker at https://github.com/tkngaejcpi/peeker.',
 );
