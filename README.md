@@ -10,7 +10,7 @@
 
 **Peeker** is a **web component** that provides a preview window of your content.
 
-**Peeker** is very useful in some static content site, for example your blog, because it just makes the preview part instead of entire site dynamic (_web component is a "island" automatically_), which is good for SEO.
+**Peeker** is very useful in some static content site, for example your blog, because it just makes the preview part instead of entire site dynamic (_web component is an "island" automatically_), which is good for SEO.
 
 Using **Peeker** as a web component, you:
 
@@ -25,8 +25,6 @@ All you have to do is:
 1. prepare previewing data
 
 2. import this script, and add the web component in your site
-
-Check more in [👉 how to use peeker](#how-to-use-peeker).
 
 ## Quick Start
 
@@ -72,7 +70,7 @@ to the anywhere you want in the body, it will be rendered to `<a>` tag.
 
 ## Custom Theme
 
-> If you want to use a custom theme, please don't call `useDefaultTheme` in the export.
+> If you want to use a custom theme, please don't call the function `useDefaultTheme` in the export.
 
 Just add such a css snippet to body within a `<style>`:
 
