@@ -35,7 +35,7 @@ First, add this importing code to the head section of html:
   import {
     defineAllComponents,
     useDefaultTheme,
-  } from 'https://cdn.jsdelivr.net/npm/@rileycki3333/peeker@1.2.0/dist/index.min.js';
+  } from 'https://cdn.jsdelivr.net/npm/@rileycki3333/peeker@1.2.1/dist/index.min.js';
 
   defineAllComponents();
   useDefaultTheme(); // remove this when you want to use a custom theme
