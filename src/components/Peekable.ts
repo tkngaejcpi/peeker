@@ -1,11 +1,11 @@
-import style from '@components/Peekable.css?inline';
 import { Component, ComponentPair } from '@rileycki3333/component-box';
 
 import { css, html, unsafeCSS } from 'lit';
-
 import { property } from 'lit/decorators.js';
 
 import { WindowPosition, peek } from '@states/peeker';
+
+import style from '@components/Peekable.css?inline';
 
 /* --- helpers --- */
 const mkPosition = (e: MouseEvent): WindowPosition => ({

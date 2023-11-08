@@ -1,7 +1,6 @@
 import { ComponentPair, StateComponent } from '@rileycki3333/component-box';
 
 import { css, html, unsafeCSS } from 'lit';
-
 import { classMap } from 'lit/directives/class-map.js';
 import { styleMap } from 'lit/directives/style-map.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
