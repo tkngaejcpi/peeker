@@ -12,7 +12,7 @@ export interface PeekData {
   rawData: string;
 }
 
-interface PeekerState {
+export interface PeekerState {
   show: boolean;
   position: WindowPosition;
 

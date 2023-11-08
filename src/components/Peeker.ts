@@ -1,24 +1,25 @@
-import { LitElement, css, html, unsafeCSS } from 'lit';
+import { ComponentPair, StateComponent } from '@rileycki3333/component-box';
 
-import { property } from 'lit/decorators.js';
+import { css, html, unsafeCSS } from 'lit';
+
 import { classMap } from 'lit/directives/class-map.js';
 import { styleMap } from 'lit/directives/style-map.js';
 import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 
-import { StoreController } from '@nanostores/lit';
+import { $state, PeekerState, hide } from '@states/peeker';
 
-import { $state, hide } from '@states/peeker';
+import style from '@components/Peeker.css?inline';
 
-import style from '@elements/Peeker.css?inline';
+/* --- component stuff --- */
+export const tag = 'vvv-peeker' as const;
 
-export const tag = 'vvv-peeker';
-
-export class Peeker extends LitElement {
-  @property()
-  private stateController = new StoreController(this, $state);
+export class Peeker extends StateComponent<PeekerState> {
+  constructor() {
+    super($state);
+  }
 
   render() {
-    const state = this.stateController.value;
+    const state = this.getState();
 
     return html`
       <div
@@ -50,6 +51,11 @@ export class Peeker extends LitElement {
     ${unsafeCSS(style)}
   `;
 }
+
+export const pair: ComponentPair = {
+  tag,
+  constructor: Peeker,
+};
 
 declare global {
   interface HTMLElementTagNameMap {

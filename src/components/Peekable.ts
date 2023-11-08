@@ -1,10 +1,11 @@
-import { LitElement, css, html, unsafeCSS } from 'lit';
+import style from '@components/Peekable.css?inline';
+import { Component, ComponentPair } from '@rileycki3333/component-box';
+
+import { css, html, unsafeCSS } from 'lit';
 
 import { property } from 'lit/decorators.js';
 
 import { WindowPosition, peek } from '@states/peeker';
-
-import style from '@elements/Peekable.css?inline';
 
 /* --- helpers --- */
 const mkPosition = (e: MouseEvent): WindowPosition => ({
@@ -12,10 +13,10 @@ const mkPosition = (e: MouseEvent): WindowPosition => ({
   y: e.clientY,
 });
 
-/* --- component --- */
-export const tag = 'vvv-peekable';
+/* --- component stuff --- */
+export const tag = 'vvv-peekable' as const;
 
-export class Peekable extends LitElement {
+export class Peekable extends Component {
   @property({ attribute: 'data-url' })
   public dataURL: string | undefined = undefined;
 
@@ -31,6 +32,11 @@ export class Peekable extends LitElement {
     ${unsafeCSS(style)}
   `;
 }
+
+export const pair: ComponentPair = {
+  tag,
+  constructor: Peekable,
+};
 
 declare global {
   interface HTMLElementTagNameMap {

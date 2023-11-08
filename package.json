@@ -18,7 +18,7 @@
     "url": "https://github.com/tkngaejcpi/peeker/issues",
     "email": "rileycki3333@gmail.com"
   },
-  "main": "./dist/peeker.js",
+  "main": "./dist/index.js",
   "license": "GPL-3.0",
   "type": "module",
   "scripts": {
@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "@nanostores/lit": "^0.2.0",
+    "@rileycki3333/component-box": "^1.0.0",
     "@types/node": "^20.8.10",
     "lit": "^2.7.6",
     "nanostores": "^0.9.4"

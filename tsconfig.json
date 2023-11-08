@@ -23,7 +23,7 @@
     /* Alias */
     "baseUrl": "./src",
     "paths": {
-      "@elements/*": ["elements/*"],
+      "@components/*": ["components/*"],
       "@states/*": ["states/*"]
     }
   },

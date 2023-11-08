@@ -1,37 +1,23 @@
-import { Peekable, tag as peekableTag } from '@elements/Peekable';
-import { Peeker, tag as peekerTag } from '@elements/Peeker';
+import { injectTheme, registerComponents } from '@rileycki3333/component-box';
 
-import style from './themes/default.css?inline';
+import { pair as peekablePair } from '@components/Peekable';
+import { pair as peekerPair } from '@components/Peeker';
+
+import defaultTheme from './themes/default.css?inline';
 
 /* export components */
-export const components = {
-  Peekable,
-  Peeker,
-};
+export const componentPairs = [peekablePair, peekerPair];
 
 /* export utils */
 export const defineAllComponents = () => {
-  if (!customElements.get(peekableTag)) {
-    customElements.define(peekableTag, Peekable);
-  }
-
-  if (!customElements.get(peekerTag)) {
-    customElements.define(peekerTag, Peeker);
-  }
+  registerComponents(componentPairs);
 };
 
 export const useDefaultTheme = () => {
-  const themeStyle = document.createElement('style');
-  themeStyle.innerHTML = style;
-
-  document.getElementsByTagName('body')[0]!.appendChild(themeStyle);
+  injectTheme(peekerPair, defaultTheme);
 };
 
-/* show a log to remind */
-console.info(
-  "module 'Peeker' is loaded, you can use custom elements 'vvv-peekable' and 'vvv-peeker' now!",
-);
-
-console.info(
-  'you can know more about Peeker at https://github.com/tkngaejcpi/peeker.',
-);
+export const ootb = () => {
+  defineAllComponents();
+  useDefaultTheme();
+};

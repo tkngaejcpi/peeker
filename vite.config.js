@@ -6,7 +6,7 @@ const resolveSrc = (k) => resolve(__dirname, './src', k);
 export default {
   resolve: {
     alias: {
-      '@elements': resolveSrc('./elements'),
+      '@components': resolveSrc('./components'),
       '@states': resolveSrc('./states'),
     },
   },
