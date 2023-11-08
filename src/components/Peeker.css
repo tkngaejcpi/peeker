@@ -77,5 +77,5 @@ article {
 }
 
 .bar > button:hover {
-  background-color: #d7e6f4;
+  background-color: var(--peeker-close-button-background-color-hover);
 }
