@@ -1,4 +1,5 @@
 import { resolve } from 'node:path';
+import dts from 'vite-plugin-dts';
 
 const resolveSrc = (k) => resolve(__dirname, './src', k);
 
@@ -24,4 +25,6 @@ export default {
       fileName: 'index',
     },
   },
+
+  plugins: [dts()],
 };
