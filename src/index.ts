@@ -11,8 +11,13 @@ export const components = {
 
 /* export utils */
 export const defineAllComponents = () => {
-  customElements.define(peekableTag, Peekable);
-  customElements.define(peekerTag, Peeker);
+  if (!customElements.get(peekableTag)) {
+    customElements.define(peekableTag, Peekable);
+  }
+
+  if (!customElements.get(peekerTag)) {
+    customElements.define(peekerTag, Peeker);
+  }
 };
 
 export const useDefaultTheme = () => {
